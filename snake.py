@@ -26,18 +26,22 @@ class Snake:
         self.segments[0].forward(MOVE_DISTANCE)
 
     def up(self):
+        game_is_on = True
         if self.head.heading() != DOWN:
             self.head.setheading(UP)
 
     def down(self):
+        game_is_on = True
         if self.head.heading() != UP:
             self.head.setheading(DOWN)
 
     def right(self):
+        game_is_on = True
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
 
     def left(self):
+        game_is_on = True
         if self.head.heading() != RIGHT:
             self.head.setheading(LEFT)
 

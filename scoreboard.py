@@ -9,7 +9,7 @@ class Scoreboard(Turtle):
         self.hideturtle()
         self.penup()
         self.color("white")
-        self.setposition(0, 280)
+        self.setposition(0, 270)
         self.write(arg=f"Score: {self.score}", move=False, align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
